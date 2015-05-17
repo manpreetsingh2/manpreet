@@ -58,13 +58,23 @@ public class ArraysExample {
 
 		int persons[][] = { person1, person2, person3 };
 
-
 		for (int i = 0; i < persons.length; i++) {
 			System.out.println("\n");
 			for (int j = 0; j < persons[i].length; j++) {
 				System.out.print(persons[i][j] + " ");
 			}
 		}
+
+		System.out.println("\n Enhanced For Loop \n");
+
+		for (int[] arr1 : persons) {
+			System.out.println(arr1.length);
+			for (int i : arr1) {
+				System.out.println(i + " ");
+
+			}
+		}
+
 	}
 
 	public static void main(String[] args) {
